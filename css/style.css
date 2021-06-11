@@ -1,0 +1,106 @@
+body {
+  min-height: 100vh;
+  background-image: linear-gradient(rgb(39, 65, 39), grey);
+}
+nav {
+  display: flex;
+  font-size: 2rem;
+  color: aliceblue;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
+}
+.logo {
+  display: inline-block;
+  /* margin: auto; */
+  width: 3rem;
+  height: 3rem;
+}
+#user {
+  display: inline-block;
+  margin: 1rem;
+  color: antiquewhite;
+  font-size: 2rem;
+}
+.container {
+  background-color: rgb(199, 154, 154);
+  max-width: 60%;
+  margin: 1rem auto;
+  height: 60vh;
+  border-radius: 10px;
+  overflow-y: auto;
+}
+.message {
+  padding: 10px;
+  border: 1px solid brown;
+  max-width: 80%;
+  width: fit-content;
+  word-wrap: break-word;
+  margin: 10px;
+  /* border-radius: 1rem; */
+  background-color: bisque;
+}
+.left {
+  float: left;
+  clear: both;
+  border-radius: 0 1rem 1rem 1rem;
+}
+.right {
+  float: right;
+  clear: both;
+  border-radius: 1rem 0 1rem 1rem;
+}
+.center {
+  margin: 10px auto;
+  clear: both;
+  background-color: rgb(54, 141, 54);
+  color: rgb(212, 208, 216);
+  border-radius: 0 0 1rem 1rem;
+}
+#send-container {
+  text-align: center;
+  margin: auto;
+  max-width: 60vw;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#message-input {
+  width: 50vw;
+  height: 1.5rem;
+  border-radius: 20px;
+  outline: none;
+  border: 2px solid red;
+  padding: 5px;
+  font-size: 1rem;
+}
+.btn {
+  cursor: pointer;
+  height: 2.2rem;
+  border: 1px solid brown;
+  background-color: rgb(77, 184, 77);
+  border-radius: 15px;
+  padding: 5px;
+  font-size: 1rem;
+}
+.btn:hover {
+  background-color: grey;
+  color: aliceblue;
+}
+@media screen and (max-width: 800px) {
+  .container {
+    width: 90%;
+    max-width: 100%;
+  }
+  nav div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  /* #send-container {
+    max-width: 100vw;
+  } */
+}
